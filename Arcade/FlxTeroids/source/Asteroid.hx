@@ -18,7 +18,7 @@ class Asteroid extends FlxSprite
 		// Bouncy!
 		elasticity = 1;
 		// Smooth rotations
-		antialiasing = true;
+		smoothing = true;
 	}
 	
 	public function init(X:Int = 0, Y:Int = 0, VelocityX:Float = 0, VelocityY:Float = 0, ?Size:String):Asteroid
