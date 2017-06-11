@@ -103,7 +103,7 @@ class PlayState extends FlxState
 		// Create the sprite to tween (flixel logo)
 		_sprite = new FlxSprite();
 		_sprite.loadGraphic(FlxGraphic.fromClass(GraphicLogo), true);
-		_sprite.antialiasing = true;
+		_sprite.smoothing = true;
 		
 		// force subpixel rendering for smoother movement 
 		// - important for movement at low speed (like the end of elasticOut)
