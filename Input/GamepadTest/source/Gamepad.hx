@@ -112,7 +112,7 @@ class Gamepad extends FlxTypedGroup<FlxSprite>
 			
 		var sprite = new FlxSprite(x, y, fileName);
 		sprite.alpha = alpha;
-		sprite.antialiasing = true;
+		sprite.smoothing = true;
 		return add(sprite);
 	}
 	
