@@ -22,7 +22,7 @@ class Grass extends FlxSkewedSprite
 		loadGraphic("assets/grass.png", true, 300, 28);
 		animation.frameIndex = Frame;
 		
-		antialiasing = true;
+		smoothing = true;
 		skew.x = StartSkew;
 	}
 	
