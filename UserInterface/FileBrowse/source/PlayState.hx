@@ -45,7 +45,7 @@ class PlayState extends FlxState
 
 		_img = new FlxSprite(0, 0);
 		_img.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
-		_img.antialiasing = true;
+		_img.smoothing = true;
 		add(_img);
 
 		var gutter:Int = 4;
