@@ -58,7 +58,7 @@ class MenuState extends FlxState
 		_bgEye.angularVelocity = 40;
 		_bgEye.maxAngular = 40;
 		// Make it look a bit smoother
-		_bgEye.antialiasing = true;
+		_bgEye.smoothing = true;
 		add(_bgEye);
 		
 		// Adding a button with an anon call back function
