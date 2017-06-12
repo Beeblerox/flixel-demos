@@ -36,7 +36,7 @@ class MenuState extends FlxState
 		_text1.moves = true;
 		_text1.size = 40;
 		_text1.color = 0xFFFF00;
-		_text1.antialiasing = true;
+		_text1.smoothing = true;
 		_text1.velocity.x = TEXT_SPEED;
 		add(_text1);
 		
@@ -45,7 +45,7 @@ class MenuState extends FlxState
 		_text2.moves = true;
 		_text2.size = _text1.size;
 		_text2.color = _text1.color;
-		_text2.antialiasing = _text1.antialiasing;
+		_text2.smoothing = _text1.smoothing;
 		_text2.velocity.x = - TEXT_SPEED;
 		add(_text2);
 		
@@ -55,7 +55,7 @@ class MenuState extends FlxState
 		_text5 = new FlxText(FlxG.width * 2 / 3, FlxG.height * 2 / 3 + 60, 0, "Visit haxeflixel.com");
 		_text3.color = _text4.color = _text5.color = 0xAAFFFF00;
 		_text3.size = _text4.size = _text5.size = 16;
-		_text3.antialiasing = _text4.antialiasing = _text5.antialiasing = true;
+		_text3.smoothing = _text4.smoothing = _text5.smoothing = true;
 		add(_text3);
 		add(_text4);
 		add(_text5);

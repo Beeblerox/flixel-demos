@@ -103,7 +103,7 @@ class PlayState extends FlxState
 		_text1 = new FlxText(0, 30, FlxG.width, "Press R to Restart");
 		_text1.setFormat(null, 40, FlxColor.RED, CENTER, OUTLINE, FlxColor.BLACK);
 		_text1.visible = false;
-		_text1.antialiasing = true;
+		_text1.smoothing = true;
 		_text1.scrollFactor.set(0, 0);
 		// Add last so it goes on top, you know the drill.
 		add(_text1);
