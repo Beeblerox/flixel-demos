@@ -18,7 +18,7 @@ class BlurState extends FlxState
 	{
 		// The first thing to do is setting up the FlxTrailArea
 		var trailArea = new FlxTrailArea(0, 0, FlxG.width - 200, FlxG.height);
-		trailArea.antialiasing = true;
+		trailArea.smoothing = true;
 		
 		// This just sets up an emitter at the bottom of the screen
 		var emitter = new FlxEmitter(0, FlxG.height + 20, 50);
