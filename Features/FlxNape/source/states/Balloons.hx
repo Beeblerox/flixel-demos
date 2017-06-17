@@ -102,7 +102,7 @@ class Balloons extends BaseState
 	function createBox() 
 	{
 		box = new FlxNapeSprite(FlxG.width * 0.5 - 27, 480 - 27, "assets/balloons/box.png");
-		box.antialiasing = true;
+		box.smoothing = true;
 		box.setBodyMaterial(1, .2, .4, .5);
 		add(box);
 	}
@@ -230,7 +230,7 @@ class Balloon extends FlxNapeSprite
 		
 		this.animation.frameIndex = FlxG.random.int(0, 6);
 		
-		antialiasing = true;
+		smoothing = true;
 		createCircularBody(25);
 		var circle = new Circle(5);
 		circle.translate(new Vec2(0, 25));

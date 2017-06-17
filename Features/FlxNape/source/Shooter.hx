@@ -49,7 +49,7 @@ class Shooter extends FlxTypedGroup<FlxNapeSprite>
 			var spr = new FlxNapeSprite(0, 0);
 			spr.makeGraphic(2, 2, 0x0);
 			
-			spr.antialiasing = true;
+			spr.smoothing = true;
 			spr.body.allowRotation = false;
 			spr.createCircularBody(8);
 			spr.setBodyMaterial(0, .2, .4, 20);

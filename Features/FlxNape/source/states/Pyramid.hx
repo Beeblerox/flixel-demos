@@ -54,7 +54,7 @@ class Pyramid extends BaseState
 				brick.makeGraphic(brickWidth, brickHeight, 0x0);
 				brick.createRectangularBody();
 				brick.loadGraphic("assets/pyramid/brick" + FlxG.random.int(1, 4) + ".png");
-				brick.antialiasing = true;
+				brick.smoothing = true;
 				brick.scale.x = brickWidth / 80;
 				brick.scale.y = brickHeight / 40;
 				brick.flipX = FlxG.random.bool(); // add some variety

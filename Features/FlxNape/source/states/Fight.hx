@@ -47,12 +47,12 @@ class Fight extends BaseState
 		
 		for (spr in songoku.sprites)
 		{
-			spr.antialiasing = true;
+			spr.smoothing = true;
 			shooter.registerPhysSprite(spr);
 		}
 		for (spr in vegeta.sprites)
 		{
-			spr.antialiasing = true;
+			spr.smoothing = true;
 			shooter.registerPhysSprite(spr);
 		}
 		
