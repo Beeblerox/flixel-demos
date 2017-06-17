@@ -76,7 +76,7 @@ class PlayState extends FlxState
 			otherOrb.loadGraphic("assets/OtherOrb.png", true, 140, 140);
 			otherOrb.createCircularBody(50);
 			otherOrb.setBodyMaterial(1, 0.2, 0.4, 0.5);
-			otherOrb.antialiasing = true;
+			otherOrb.smoothing = true;
 			otherOrb.setDrag(1, 1);
 			
 			add(otherOrbShadow);
@@ -111,7 +111,7 @@ class PlayState extends FlxState
 		// Camera Overlay
 		deadzoneOverlay = new FlxSprite(-10000, -10000);
 		deadzoneOverlay.makeGraphic(FlxG.width, FlxG.height, FlxColor.TRANSPARENT, true);
-		deadzoneOverlay.antialiasing = true;
+		deadzoneOverlay.smoothing = true;
 
 		overlayCamera = new FlxCamera(0, 0, 640, 720);
 		overlayCamera.bgColor = FlxColor.TRANSPARENT;
